@@ -1,0 +1,52 @@
+body{
+margin: 0;
+padding: 0;
+}
+#wholebody{
+    width: 72vw;
+    height: 287vh;
+    background-color: lightcoral;
+    margin-left: 14%;
+}
+#navbar{
+    width: 18vw;
+    height: 100vh;
+    background-color: aquamarine;
+    position: fixed;
+}
+#theapartment{
+    width: 53vw;
+    height: 85vh;
+    border: 3px solid maroon;
+    margin-left: 25.5%;
+}
+#thespace{
+    width: 53vw;
+    height: 33vh;
+    border: 3px solid yellow;
+    margin-left: 25.5%;
+}
+#amenities{
+    width: 53vw;
+    height: 33vh;
+    border: 3px solid orangered;
+    margin-left: 25.5%;
+}
+#extrainfo{
+    width: 53vw;
+    height: 26vh;
+    border: 3px solid purple;
+    margin-left: 25.5%;
+}
+#rules{
+    width: 53vw;
+    height: 29vh;
+    border: 3px solid blue;
+    margin-left: 25.5%;
+}
+#footer{
+     width: 53vw;
+    height: 75vh;
+    border: 3px solid black;
+    margin-left: 25.5%;
+}
