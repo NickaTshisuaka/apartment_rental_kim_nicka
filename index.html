@@ -6,16 +6,83 @@
     <title>Apartment Rental</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="download.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <div id="wholebody">
         <div id="navbar"></div>
-        <div id="theapartment"></div>
+        <div id="theapartment">
+            <div id="apartment-gallery">
+  <h2>The Apartment</h2>
+  <div id="main-image">
+    <img src="livingroom.jpg" alt="Living Room">
+    <div class="caption">Living Room</div>
+  </div>
+
+  <div id="thumbnails">
+    <img src="livingroom.jpg" alt="Living Room">
+    <img src="diningroom.jpg" alt="Dining Room">
+    <img src="bedroom.jpg" alt="Bedroom">
+    <img src="livingroom2.jpg" alt="Office">
+  </div>
+</div>
+
+        </div>
         <div id="thespace"></div>
-        <div id="amenities"></div>
+        <div id="amenities1">
+            <section id="amenities">
+  <h3>Amenities</h3>
+  <div class="amenities-grid">
+    <div class="amenity"><i class="fa fa-bath"></i> Shower</div>
+    <div class="amenity"><i class="fa fa-utensils"></i> Kitchen</div>
+    <div class="amenity"><i class="fa fa-wifi"></i> WiFi</div>
+    <div class="amenity"><i class="fa fa-thermometer-half"></i> Heating</div>
+    <div class="amenity"><i class="fa fa-tv"></i> TV</div>
+    <div class="amenity"><i class="fa fa-wheelchair"></i> Accessible</div>
+  </div>
+</section>
+
+
+        </div>
         <div id="extrainfo"></div>
-        <div id="rules"></div>
-        <div id="footer"></div>
+        <div id="rules">
+            <h3>Rules</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris  <br>
+                i ut aliquip ex ea commodo consequat. <br><br>
+                Subscribe to receive updates on available dates and special offers. </p>
+                <button id="subscribeBtn">Subscribe</button>
+        </div>
+        <div id="popup" style="display: none;">
+            <h1>Subscribe</h1>
+  <label for="emailInput">Enter your email:</label> <br>
+  <input type="email" id="emailInput" placeholder="you@example.com"> <br>
+  <button id="confirmSubscribeBtn">Subscribe</button>
+</div>
+
+        <div id="footer">
+            <section id="contact">
+  <h3>Contact</h3>
+  <ul class="contact-info">
+    <li><i class="fa fa-map-marker"></i> Chicago, US</li>
+    <li><i class="fa fa-phone"></i> Phone: +00 151515</li>
+    <li><i class="fa fa-envelope"></i> Email: mail@mail.com</li>
+  </ul>
+
+  <p>Questions? Go ahead, ask them:</p>
+
+  <form id="contact-form">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="email" placeholder="Email" name="email" required>
+    <textarea placeholder="Message" name="message" required></textarea>
+    <button type="submit">Send a Message</button>
+  </form>
+</section>
+
+        </div>
     </div>
+    <script src="javascript.js"></script>
+
 </body>
 </html>
