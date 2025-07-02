@@ -36,3 +36,52 @@ thumbnails.forEach(thumbnail => {
     caption.textContent = thumbnail.alt;
   });
 });
+
+
+
+
+subscribeBtn.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+
+confirmSubscribeBtn.addEventListener('click', () => {
+  const email = emailInput.value;
+  if (email) {
+    alert(`Thank you for subscribing with: ${email}`);
+    popup.style.display = 'none';
+    emailInput.value = ''; 
+  } else {
+    alert('Please enter an email!');
+  }
+});
+
+
+ const modal = document.getElementById("subscribeModal");
+    const openLink = document.getElementById("subscribeLink");
+    const closeBtn = document.querySelector(".close");
+    const form = document.getElementById("subscribeForm");
+    const thankYouMessage = document.getElementById("thankYouMessage");
+
+    openLink.onclick = function (e) {
+      e.preventDefault();
+      modal.style.display = "block";
+      form.style.display = "block";
+      thankYouMessage.style.display = "none";
+    };
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // prevent real submission
+      form.style.display = "none";
+      thankYouMessage.style.display = "block";
+    });

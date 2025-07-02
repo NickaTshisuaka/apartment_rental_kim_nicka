@@ -35,15 +35,30 @@
             <label for="kids">Kids</label>
             <input type="number" id="kids" name="kids" min="0" value="0" required />
 
-            <button type="submit" class="search-button">Search availability</button>
+            <button type="submit" class="search-button"><i class="fa fa-search" aria-hidden="true"></i>Search availability</button>
           </form>
 
           <nav class="navbar-links">
             <a href="#"> Apartment</a>
-            <a href="#"> Subscribe</a>
+            <a href="#" id="subscribeLink"> Subscribe</a>
             <a href="#"> Contact</a>
           </nav>
         </div>
+        <div id="subscribeModal" class="modal">
+    <div class="modal-box">
+      <span class="close">&times;</span>
+      <h2>SUBSCRIBE</h2>
+      <p>Join our mailing list to receive updates on available dates and special offers.</p>
+      <form id="subscribeForm">
+        <input type="email" placeholder="Enter e-mail" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <div id="thankYouMessage" style="display: none;">
+        <p><strong>Thank you for subscribing!</strong></p>
+      </div>
+    </div>
+  </div>
+        
         <div id="theapartment">
           <div id="apartment-gallery">
             <h2>The Apartment</h2>
