@@ -1,0 +1,355 @@
+body{
+margin: 0;
+ font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+padding: 0;
+}
+#wholebody{
+    width: 72vw;
+    height: 287vh;
+    
+    margin-left: 14%;
+}
+#navbar{
+    width: 18vw;
+    height: 100vh;
+    
+    position: fixed;
+}
+#theapartment{
+    width: 53vw;
+    height: 85vh;
+    margin-left: 25.5%;
+}
+#apartment-gallery {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#apartment-gallery h2 {
+  color: #4CAF50;
+  font-size: 30px;
+}
+
+#main-image {
+  position: relative;
+}
+
+#main-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#main-image .caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: black;
+  color: white;
+  padding: 9px 13px;
+  font-size: 14px;
+}
+
+#thumbnails {
+  display: flex;
+  gap: 17px;
+  margin-top: 10px;
+}
+
+#thumbnails img {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+  opacity: 70%;
+}
+
+#thumbnails img:hover {
+  opacity: 40;
+}
+
+#thespace{
+    width: 53vw;
+
+    height: 33vh;
+    height: 26vh; 
+
+    margin-left: 25.5%;
+}
+#amenities1{
+    width: 53vw;
+    height: 33vh;
+    
+    margin-left: 25.5%;
+}
+#amenities {
+  margin: 20px 0;
+}
+
+#amenities h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 30px;
+}
+
+.amenity {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.amenity i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+#extrainfo{
+    width: 53vw;
+
+    height: 26vh;
+    height: 29vh;
+
+    
+    margin-left: 25.5%;
+}
+#rules{
+    width: 53vw;
+    height: 29vh;
+
+    margin-left: 25.5%;
+}
+#rules button{
+    width: 30%;
+    height: 20%;
+    background-color: rgb(46, 170, 46);
+    border-radius: 0;
+    border: none;
+}
+#popup {
+  position: fixed;
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 120px;
+ width: 50vw;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#popup button{
+    background-color: #4CAF50;
+    width: 14vw;
+    height: 6vh;
+    color: white;
+}
+#footer{
+     width: 53vw;
+
+    height: 75vh;
+    margin-left: 25.5%;
+}
+#contact {
+  margin: 40px 0;
+}
+#contact h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.contact-info li {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.contact-info i {
+  margin-right: 8px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  width: 53vw;
+  box-sizing: border-box;
+}
+
+#contact-form textarea {
+  resize: vertical;
+  min-height: 10px;
+}
+
+#contact-form button {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background: #45A049;
+}
+    height: 70vh;
+    
+    margin-left: 25.5%;
+}
+#navbar {
+  width: 18vw;
+  height: 100vh;
+  background-color: #eeeeee;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-left: 225px;
+}
+
+#navbar h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.price {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.per-night {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+
+.booking-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.booking-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.booking-form button:hover {
+  background-color: gray;
+}
+
+.navbar-links {
+  margin-top: 30px;
+}
+
+.navbar-links a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+
+.contact-form {
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #4CAF50; 
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
+
+.the-space, .extra-info {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.the-space h2, .extra-info h2 {
+  margin-bottom: 10px;
+}
+
+.the-space ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+.the-space li {
+  padding: 5px 0;
+}
+.extra-info p {
+  margin: 10px 0;
+}
+
+.payment-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
