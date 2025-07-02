@@ -352,4 +352,140 @@ padding: 0;
   align-items: center;
 }
 
+/* ======= RESPONSIVITY======= */
+
+@media (max-width: 1024px) {
+  #wholebody {
+    width: 90vw;
+    margin-left: 5%;
+  }
+
+  #navbar {
+    width: 20vw;
+  }
+
+  #theapartment,
+  #thespace,
+  #amenities1,
+  #extrainfo,
+  #rules,
+  #footer {
+    width: 70vw;
+    margin-left: 23%;
+  }
+
+  #popup {
+    width: 70vw;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+  }
+
+  #popup button {
+    width: 20vw;
+  }
+}
+
+@media (max-width: 768px) {
+  #wholebody {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    box-shadow: none;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  #theapartment,
+  #thespace,
+  #amenities1,
+  #extrainfo,
+  #rules,
+  #footer {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  #popup {
+    width: 80vw;
+    padding: 60px;
+  }
+
+  #popup button {
+    width: 40vw;
+  }
+
+  #thumbnails {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #thumbnails img {
+    width: 45%;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #navbar h2 {
+    font-size: 20px;
+  }
+
+  .price,
+  .per-night {
+    font-size: 14px;
+  }
+
+  .booking-form label {
+    font-size: 12px;
+  }
+
+  .booking-form input,
+  .booking-form button {
+    font-size: 12px;
+  }
+
+  .navbar-links a {
+    font-size: 14px;
+  }
+
+  #main-image .caption {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  #popup {
+    width: 90vw;
+    padding: 40px;
+  }
+
+  #popup button {
+    width: 70vw;
+  }
+
+  .amenity {
+    font-size: 14px;
+  }
+}
+
 
